@@ -1,0 +1,113 @@
+/* Css for the header part */
+
+header {
+  display: flex;
+  margin: 2% 10% 2%;
+  justify-content: space-between;
+}
+
+header > a img {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+header > nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header > nav ul li {
+  padding: 2rem;
+}
+
+header > nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+header > nav ul li a.active {
+  color: #dc143a;
+}
+
+header > nav ul li a:hover {
+  color: #dc143a;
+}
+
+/* Css for the main content part */
+main {
+  margin: 2% 10% 2%;
+}
+
+/* Css for the footer part */
+footer {
+  margin: 2% 10% 2%;
+}
+
+footer .container > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+footer .container > ul li {
+  padding: 5px 15px 5px 0;
+}
+
+footer .container > ul li a i {
+  color: white;
+  font-size: 22px;
+  transition: 0.2s ease;
+}
+
+footer .container > ul li a:hover i {
+  color: #dc143a;
+  font-size: 22px;
+  transform: scale(1.5);
+}
+
+/* CSS for other common classes */
+.container {
+  padding: 0 10%;
+}
+
+h1.heading {
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+div#goto-link {
+  margin: 3rem 0 1.2rem 0;
+}
+
+div#goto-link a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+}
+
+div#goto-link a > i {
+  margin: 7px 0 0 7px;
+}
+
+div#goto-link a:hover {
+  color: #dc143a;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-name: slideInLeft;
+}

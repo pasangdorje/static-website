@@ -1,0 +1,188 @@
+@import "./layout.css";
+
+* {
+  font-family: cursive;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+h3.sub-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dc143a;
+}
+
+.container p.description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.container p.description a {
+  border-radius: 5px;
+  background: #dc143a;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.container p.description a:hover {
+  background: white;
+  color: #dc143a;
+}
+
+#resume {
+  border-radius: 5px;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.project-type {
+  display: flex;
+  margin: 2rem 0;
+}
+
+#circle {
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin: 6.5px 7px 0 0;
+}
+
+section.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.project-list .project-item {
+  width: 45%;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+section.project-list .project-item:hover {
+  transform: scale(1.05);
+}
+section.project-list .project-item:nth-child(odd) {
+  margin-right: 5%;
+}
+
+section.project-list .project-item:nth-child(even) {
+  margin-left: 5%;
+}
+
+h1#projectHeading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.project-subheading {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+img#projectImage {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+ul#technologyList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+ul#technologyList li {
+  padding: 3px 5px;
+  margin-right: 10px;
+  background: #dc143a;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+a#projectWebsite {
+  text-decoration: none;
+  color: white;
+}
+
+a#projectWebsite:hover {
+  color: #dc143a;
+}
+
+#contactForm {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm .error-msg {
+  color: #dc143a;
+  font-size: 0.9rem;
+}
+
+#contactForm input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+}
+
+#contactForm input#submitBtn {
+  background: #dc143a;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contactForm input#submitBtn:hover {
+  background: #a50e2a;
+}
+
+#skillList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#skillList li {
+  padding: 20px;
+}
+
+#skillList li img {
+  width: 100px;
+  height: 100px;
+  transition: 0.3s ease;
+}
+
+#skillList li img:hover {
+  width: 100px;
+  height: 100px;
+  transform: scale(1.5);
+}
