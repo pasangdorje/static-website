@@ -3,6 +3,7 @@
 header {
   display: flex;
   margin: 2% 10% 2%;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -15,6 +16,7 @@ header > a img {
 header > nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 header > nav ul li {
@@ -96,18 +98,18 @@ div#goto-link a:hover {
   color: #dc143a;
 }
 
-@keyframes slideInLeft {
+@keyframes slideFromBottomtoTop {
   0% {
-    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 body {
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
-  animation-name: slideInLeft;
+  animation-name: slideFromBottomtoTop;
 }

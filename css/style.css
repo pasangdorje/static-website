@@ -12,6 +12,10 @@ body {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h3.sub-heading {
   font-size: 2.5rem;
   font-weight: bold;
@@ -169,10 +173,22 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin-left: -10px;
 }
 
 #skillList li {
   padding: 20px;
+  box-shadow: 3px 1px 21px 4px #131313;
+  -webkit-box-shadow: 3px 1px 21px 4px #131313;
+  -moz-box-shadow: 3px 1px 21px 4px #131313;
+  background: #111111;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+#skillList li:hover {
+  transform: scale(1.2);
 }
 
 #skillList li img {
@@ -181,8 +197,12 @@ textarea {
   transition: 0.3s ease;
 }
 
-#skillList li img:hover {
+/* #skillList li img:hover {
   width: 100px;
   height: 100px;
   transform: scale(1.5);
+} */
+
+#skillList li div.skill-label {
+  text-align: center;
 }
